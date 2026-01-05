@@ -5,24 +5,27 @@ This repository contains solutions from part 0-13 of the exercises from the [Uni
 ## Course content
 
 ### Part 1: Introduction to React
-- Familiarization with the React-library and some features of JavaScript that are important for understanding React.
+- Familiarization with the React-library and features of JavaScript that are important for understanding React.
+
+### Part 2: Communicating with server
+- Continuation of the introduction to React. Includes rendering data collections, submitting data to a React app with HTML forms, fetching data from a remote backend server, and adding CSS styles to a React app.
 
 ## My course progress
 
 | Part             | Status      |
 | :--------------: | :---------: |
-| [0](./part0/)   | WIP         |
-| [1](./part1/)   | Done        |
-| [2](./part2/)   | TODO        |
-| [3](./part3/)   | TODO        |
-| [4](./part4/)   | TODO        |
-| [5](./part5/)   | TODO        |
-| [6](./part6/)   | TODO        |
-| [7](./part7/)   | TODO        |
-| [8](./part8/)   | TODO        |
-| [9](./part9/)   | TODO        |
-| [10](./part10/) | TODO        |
-| [11](./part11/) | TODO        |
-| [12](./part12/) | TODO        |
-| [13](./part13/) | TODO        |
+| [0](./part0/)    | WIP         |
+| [1](./part1/)    | Done        |
+| [2](./part2/)    | WIP         |
+| [3](./part3/)    | TODO        |
+| [4](./part4/)    | TODO        |
+| [5](./part5/)    | TODO        |
+| [6](./part6/)    | TODO        |
+| [7](./part7/)    | TODO        |
+| [8](./part8/)    | TODO        |
+| [9](./part9/)    | TODO        |
+| [10](./part10/)  | TODO        |
+| [11](./part11/)  | TODO        |
+| [12](./part12/)  | TODO        |
+| [13](./part13/)  | TODO        |
 
