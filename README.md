@@ -11,18 +11,18 @@ This repository contains solutions from part 0-13 of the exercises from the [Uni
 
 | Part             | Status      |
 | :--------------: | :---------: |
-| [0](./part_0/)   | WIP         |
-| [1](./part_1/)   | Done        |
-| [2](./part_2/)   | TODO        |
-| [3](./part_3/)   | TODO        |
-| [4](./part_4/)   | TODO        |
-| [5](./part_5/)   | TODO        |
-| [6](./part_6/)   | TODO        |
-| [7](./part_7/)   | TODO        |
-| [8](./part_8/)   | TODO        |
-| [9](./part_9/)   | TODO        |
-| [10](./part_10/) | TODO        |
-| [11](./part_11/) | TODO        |
-| [12](./part_12/) | TODO        |
-| [13](./part_13/) | TODO        |
+| [0](./part0/)   | WIP         |
+| [1](./part1/)   | Done        |
+| [2](./part2/)   | TODO        |
+| [3](./part3/)   | TODO        |
+| [4](./part4/)   | TODO        |
+| [5](./part5/)   | TODO        |
+| [6](./part6/)   | TODO        |
+| [7](./part7/)   | TODO        |
+| [8](./part8/)   | TODO        |
+| [9](./part9/)   | TODO        |
+| [10](./part10/) | TODO        |
+| [11](./part11/) | TODO        |
+| [12](./part12/) | TODO        |
+| [13](./part13/) | TODO        |
 
