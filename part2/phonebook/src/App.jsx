@@ -3,12 +3,16 @@ import personService from './services/persons';
 import Filter from './components/Filter'
 import PersonForm from './components/PersonForm';
 import Persons from './components/Persons';
+import Notification from './components/Notification';
+import './index.css'
 
 const App = () => {
   const [persons, setPersons] = useState([]);
   const [searchName, setSearchName] = useState('');
   const [newName, setNewName] = useState('');
   const [newNumber, setNewNumber] = useState('');
+  const [message, setMessage] = useState(null);
+  const [success, setSuccess] = useState(true);
 
   useEffect(() => {
     personService
@@ -46,13 +50,22 @@ const App = () => {
       .update(existingPerson.id, updatedPerson)
       // update FE state
       .then(returnedPerson => {
+        setSuccess(true);
         setPersons(prev => prev.map(person => person.id === existingPerson.id ? returnedPerson : person));
         setNewName('');
         setNewNumber('');
+        setMessage(`Updated ${existingPerson.name}`);
+        setTimeout(() => {
+          setMessage(null);
+        }, 3000);
       })
       .catch(error => {
-        console.log(error);
-        alert(`unable to update ${existingPerson.name}`);
+        setSuccess(false);
+        setMessage(`Information of ${existingPerson.name} has already been removed from server`);
+        setTimeout(() => {
+          setMessage(null);
+        }, 3000);
+
       })
     } else {
       // create the new person
@@ -60,9 +73,15 @@ const App = () => {
       personService
         .create(newPerson)
         .then(returnedPerson => {
+          setSuccess(true);
           setPersons(prev => prev.concat(returnedPerson));
           setNewName('');
           setNewNumber('');
+          setMessage(`Added ${newPerson.name}`);
+          setTimeout(() => {
+            setMessage(null);
+          }, 3000);
+ 
         })
         .catch(err => {
           console.log(err);
@@ -91,6 +110,10 @@ const App = () => {
   return (
     <div>
       <h2>Phonebook</h2>
+      <Notification 
+        message={message}
+        isSuccessful={success}
+      />
       <Filter 
         searchName={searchName} 
         handleSearchChange={handleSearchChange}
