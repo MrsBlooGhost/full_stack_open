@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+
 const app = express();
 const PORT = 3000;
 
@@ -11,6 +12,7 @@ morgan.token('post', function getPostBody(request) {
   }
 });
 
+app.use(express.static('dist'));
 app.use(express.json());
 app.use(morgan(':method :url :status :response-time ms :post'));
 
